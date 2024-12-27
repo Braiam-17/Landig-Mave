@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a23;
+    color: white;
+    text-align: center;
+    background-image: url('img/map-306920_1280.png'); /* Añade aquí la ruta de tu imagen del mapa */
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    padding: 20px;
+}
+.logo {
+    width: 250px; /* Ajusta el tamaño de tu logo aquí */
+    margin: 0 auto 20px; /* Centra el logo y añade un margen inferior */
+    display: block;
+}
+.text-group {
+    margin-bottom: 10px;
+}
+.subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+.highlight {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #00e3d9;
+}
+.service {
+    background-color: rgba(26, 26, 61, 0.8); /* Añade transparencia */
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.service:hover {
+    background-color: rgba(26, 26, 61, 1); /* Sin transparencia al pasar el cursor */
+}
+.service img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.service span {
+    font-family: 'Raleway', sans-serif;
+}
+.service a {
+    color: white;
+    text-decoration: none; /* Elimina el subrayado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #00e3d9;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.section {
+    padding: 50px 20px;
+    background-color: #1a1a3d;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .service img {
+        margin-bottom: 10px;
+    }
+}

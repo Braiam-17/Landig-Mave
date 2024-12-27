@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAVEDIGITAL_ Banner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <img src="img/mv-removebg-preview.png" alt="Logo MAVEDIGITAL_" class="logo"> <!-- Añade aquí la ruta de tu logo -->
+        <div class="text-group">
+            <div class="subtitle">Hace Crecer</div>
+            <div class="highlight">Tu Marca</div>
+        </div>
+        <div class="service">
+            <a href="https://wa.me/+542657228068" target="_blank">
+            <img src="img/whatsapp-873316_1280.png" alt="Icono de WhatsApp"> <!-- Añade aquí la ruta de tu icono de WhatsApp -->
+            <span>Whatsapp - Tu consulta no molesta</span>
+        </a>
+        </div>
+        <div class="service">
+            <a href="https://www.instagram.com/mavedigital_/" target="_blank">
+            <img src="img/instagram-1581266_1280-removebg-preview.png" alt="Icono de Instagram"> <!-- Añade aquí la ruta de tu icono de Instagram -->
+            <span>Seguinos en nuestro Instagram</span>
+        </a>
+        </div>
+        <div class="service" onclick="scrollToSection('programacion-web')">
+            <img src="img/tv-2223047_1280.png" alt="Icono de Diseño Web">
+            <span>Diseños y Programación Web</span>
+        </div>
+        <div class="service" onclick="scrollToSection('marketing-digital')">
+            <img src="img/mktd.png" alt="Icono de Marketing Digital">
+            <span>Marketing Digital</span>
+        </div>
+        <div class="footer">MAVEDIGITAL_</div>
+    </div>
+
+    <div id="programacion-web" class="section">
+        <h2>Programación Web</h2>
+        <p>Detalles sobre tus servicios de programación web aquí...</p>
+    </div>
+
+    <div id="marketing-digital" class="section">
+        <h2>Marketing Digital</h2>
+        <p>Detalles sobre tus servicios de marketing digital aquí...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
