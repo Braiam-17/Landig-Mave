@@ -4,10 +4,12 @@ body {
     background-color: #0a0a23;
     color: white;
     text-align: center;
-    background-image: url('img/map-306920_1280.png'); /* Añade aquí la ruta de tu imagen del mapa */
-    background-size: cover;
-    background-position: center;
+    background-image: url('img/nature-1032523.webp'); /* Añade aquí la ruta de tu imagen del mapa */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
 }
+
 .container {
     padding: 20px;
 }
@@ -61,7 +63,7 @@ body {
     width: 100%;
     height: 100%;
 }
-.footer {
+.xd {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
     color: #00e3d9;
@@ -74,13 +76,186 @@ body {
     margin-top: 20px;
     border-radius: 10px;
     color: white;
+    text-align: left;
 }
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-left {
+    flex: 1 1 45%;
+    margin-right: 20px;
+}
+
+.image-right {
+    flex: 1 1 45%;
+}
+
+.image-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+    justify-items: center; /* Centra los elementos dentro de la cuadrícula */
+}
+
+.project {
+    background-color: rgba(26, 26, 61, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.project p {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #00e3d9; /* Color para el texto de los proyectos */
+    font-size: 1.1em; /* Tamaño de fuente ligeramente mayor */
+}
+
+.project h3 {
+    font-family: 'Raleway', sans-serif;
+    color: #00e3d9; /* Color celeste para los títulos de los proyectos */
+    font-size: 1.5em; /* Tamaño de fuente para los títulos */
+    margin-bottom: 10px;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Ajustes específicos para pantallas grandes */
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tres columnas en pantallas grandes */
+    }
+
+    .project img {
+        max-width: 80%; /* Ajusta el tamaño de las imágenes en pantallas grandes */
+    }
+}
+
 @media (max-width: 768px) {
+    body { 
+        background-size: cover; 
+        background-position: center; 
+    }
     .service {
-        flex-direction: column;
+        flex-direction: row;
         padding: 15px;
     }
     .service img {
-        margin-bottom: 10px;
+        margin-right: 10px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    
+    .text-left, .image-right {
+        flex: 1 1 100%;
+        margin: 0 0 20px 0;
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 }
+
+/* Estilos para la sección de Programación Web */
+.section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #00e3d9;
+    margin-bottom: 20px;
+}
+
+.project a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: inherit; /* Hereda el color del texto */
+}
+
+.section h3 { 
+    font-family: 'Montserrat',sans-serif; 
+    font-size: 2em;
+    color: #00e3d9;
+    margin-top: 40px; /* Añade margen superior para separar del contenido anterior */ 
+    margin-bottom: 40px;
+     text-align: center; /* Centra el título */ 
+}
+
+.section p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+.text-left p {
+    font-weight: 700;
+}
+
+.text-left p span {
+    text-transform: uppercase;
+    color: #00e3d9;
+}
+
+.text-left ol {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #ffffff;
+    padding-left: 20px; /* Espacio para los números */
+    counter-reset: item; /* Resetea el contador de items */
+}
+
+.text-left ol li {
+    color: #ffffff;
+    position: relative;
+    list-style: none;
+    counter-increment: item; /* Incrementa el contador de items */
+    margin-bottom: 10px;
+}
+
+.text-left ol li::before {
+    content: counter(item) " ";
+    color: white; /* Color blanco para los números */
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.text-left ol li span {
+    color: #00e3d9; /* Color celeste para las palabras antes del ':' */
+}
+
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #1a1a3d;
+    position: relative; /* Posicionamiento relativo para el footer */
+}
+
+.footer p {
+    margin: 0;
+    color: white;
+}
+
+.footer .highlighted-text {
+    color: #00e3d9; /* Color celeste para MAVEDIGITAL_ */
+}
+
