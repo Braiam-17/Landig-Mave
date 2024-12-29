@@ -11,6 +11,13 @@ body {
     background-position: center; /* Centrado de la imagen */
 }
 
+/* Ajustes para dispositivos iOS */
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-attachment: scroll; /* Cambiado a scroll para iOS */
+        background-size: 100% 100%; /* Ajusta el tamaño de la imagen al viewport */
+    }
+}
 
 
 /* Contenedor principal */
