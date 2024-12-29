@@ -11,6 +11,13 @@ body {
     background-position: center; /* Centrado de la imagen */
 }
 
+/* Para dispositivos iOS */
+@supports (-webkit-overflow-scrolling: touch) {
+    body {
+        background-attachment: scroll; /* Cambiar a scroll en iPhones */
+    }
+}
+
 /* Contenedor principal */
 .container {
     padding: 20px;
