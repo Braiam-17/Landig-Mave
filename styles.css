@@ -290,3 +290,113 @@ body::before {
 .footer .highlighted-text {
     color: #00e3d9;
 }
+
+/* Estilos para la sección "Sobre Nosotros" */
+#sobre-nosotros {
+    background-color: rgba(26, 26, 61, 0.8); /* Fondo semi-transparente */
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin: 30px auto;
+    max-width: 1200px; /* Ancho máximo */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Sombra */
+    text-align: center; /* Centrado de textos */
+}
+
+#sobre-nosotros h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    color: #00e3d9; /* Color celeste */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.profile {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente para cada perfil */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+    transform: scale(1.05); /* Ampliación al pasar el cursor */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10%; /* Imagen redonda */
+    margin-bottom: 5px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #ffffff; /* Blanco */
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #ffffff; /* Gris claro */
+    line-height: 1.6;
+    text-align: justify; /* Texto justificado */
+}
+
+/* Estilo para los textos <strong> dentro de la sección "sobre-nosotros" */
+#sobre-nosotros strong {
+    color: #00e3d9; /* Celeste de la paleta */
+    font-weight: bold; /* Asegura el texto en negrita */
+}
+
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile {
+        max-width: 90%;
+    }
+}
+
+/* Estilo para el botón "¿Quiénes somos?" */
+.about-us-btn {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #012221; /* Blanco */
+    background-color: #00e3d9; /* Celeste vibrante */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+.about-us-btn:hover {
+    background-color: #19e8dc; /* Color más claro al hacer hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada */
+    transform: translateY(-3px); /* Movimiento hacia arriba */
+}
+
+.about-us-btn:active {
+    background-color: #028381; /* Color más oscuro al presionar */
+    transform: translateY(1px); /* Movimiento hacia abajo */
+}
+
